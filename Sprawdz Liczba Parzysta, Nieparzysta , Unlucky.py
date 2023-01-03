@@ -5,3 +5,4 @@ for ilosc in range(1,21):
     elif numb % 2 == 0:answ = "even"
     else: answ = "odd"
     print(numb,"is",answ)
+input("Wciśnij enter aby zakończyć")

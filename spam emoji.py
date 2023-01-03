@@ -4,7 +4,7 @@ n = 1
 while n<11:
     print("\U0001f600"*n)
     n+=1
-
+input("wciśnij enter aby zakonczyć")
 
 
 # NIE WIEM JAK ZROBIĆ PIRAMIDE

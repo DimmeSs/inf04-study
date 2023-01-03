@@ -12,3 +12,4 @@ while msg != "stop":
     print(msg)
     msg = input()
 print("no doobraa")
+input("Wciśnij Enter")
