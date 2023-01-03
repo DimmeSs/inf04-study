@@ -14,7 +14,7 @@ elif zamowienie == "Latte":
     if dod == "Tak" or dod == "tak":
         cena = 18
     else:
-        cena = 10
+        cena = 15
 elif zamowienie == "Capp":
     cena = 8
 print("Zamówiłeś: "+ zamowienie + ". Kosztować będzie Ciebie to "+str(cena)+"$")
