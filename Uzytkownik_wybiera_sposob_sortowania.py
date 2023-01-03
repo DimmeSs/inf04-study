@@ -33,7 +33,7 @@ def sort_bubble():
 # Użytkownik wybiera sposób sortowania
 print("Wybierz sposób sortowania:")
 print("1 - sortowanie przez wybieranie")
-print("2 - sortowanie przez wstawianie")
+print("2 - ssortowanie przez wstawianie")
 print("3 - sortowanie bombelkowe")
 choice = int(input())
 
