@@ -24,6 +24,8 @@ class Notatnik:
     def diagnostyczne(self):
         print(f"Tytuł: {self._tytul} ;tresc: {self._tresc};id: {self.id} ;licznik:{Notatnik.__licznik}")
 
+#TESTY PONIŻEJ
+
 N1= "Tytuł1"
 T1="Tresc pierwszej notatki"
 
