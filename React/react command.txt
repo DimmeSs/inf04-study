@@ -1,0 +1,8 @@
+npm i create-react-app bootstrap
+----
+npx create-react-app nazwa
+cd inf04
+npm start
+
+App.js zmieniamy na jsx
+

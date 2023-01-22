@@ -1,0 +1,463 @@
+PS G:\!OGOLNA KOPIA PLIKÓW> GIT
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+PS G:\!OGOLNA KOPIA PLIKÓW> GIT CLONE https://github.com/DimmeSs/inf04-study.git
+fatal: cannot handle CLONE as a builtin
+PS G:\!OGOLNA KOPIA PLIKÓW> GIT clone https://github.com/DimmeSs/inf04-study.git
+Cloning into 'inf04-study'...
+info: please complete authentication in your browser...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+PS G:\!OGOLNA KOPIA PLIKÓW> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS G:\!OGOLNA KOPIA PLIKÓW> cd 'G:\!OGOLNA KOPIA PLIKÓW\inf04-study\'
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        PAPIER KAMIEN NOZYCE.py
+        TEST (1).py
+        Untitled-1.py
+        Uzytkownik_wybiera_sposob_sortowania.py
+        Zadanie.py
+        Zwykle_pytanie.py
+        nie powtarzaj po nie.py
+        "postaraj si\304\231 to naprawi\304\207.py"
+        spam emoji.py
+        sprawdzanie czy liczba jest parzysta nieparzysta w przedziale.py
+        szyfrowanie  GADERYPOLUKI.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git add .
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   PAPIER KAMIEN NOZYCE.py
+        new file:   TEST (1).py
+        new file:   Untitled-1.py
+        new file:   Uzytkownik_wybiera_sposob_sortowania.py
+        new file:   Zadanie.py
+        new file:   Zwykle_pytanie.py
+        new file:   nie powtarzaj po nie.py
+        new file:   "postaraj si\304\231 to naprawi\304\207.py"
+        new file:   spam emoji.py
+        new file:   sprawdzanie czy liczba jest parzysta nieparzysta w przedziale.py
+        new file:   szyfrowanie  GADERYPOLUKI.py
+
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   PAPIER KAMIEN NOZYCE.py
+        new file:   TEST (1).py
+        new file:   Untitled-1.py
+        new file:   Uzytkownik_wybiera_sposob_sortowania.py
+        new file:   Zadanie.py
+        new file:   Zwykle_pytanie.py
+        new file:   nie powtarzaj po nie.py
+        new file:   "postaraj si\304\231 to naprawi\304\207.py"
+        new file:   spam emoji.py
+        new file:   sprawdzanie czy liczba jest parzysta nieparzysta w przedziale.py
+        new file:   szyfrowanie  GADERYPOLUKI.py
+
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git commit -m "1 przeszlanie plikow"
+[main b6fb5ec] 1 przeszlanie plikow
+ 11 files changed, 587 insertions(+)
+ create mode 100644 PAPIER KAMIEN NOZYCE.py
+ create mode 100644 TEST (1).py
+ create mode 100644 Untitled-1.py
+ create mode 100644 Uzytkownik_wybiera_sposob_sortowania.py
+ create mode 100644 Zadanie.py
+ create mode 100644 Zwykle_pytanie.py
+ create mode 100644 nie powtarzaj po nie.py
+ create mode 100644 "postaraj si\304\231 to naprawi\304\207.py"
+ create mode 100644 spam emoji.py
+ create mode 100644 sprawdzanie czy liczba jest parzysta nieparzysta w przedziale.py
+ create mode 100644 szyfrowanie  GADERYPOLUKI.py
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Untitled-1.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git diff
+diff --git a/Untitled-1.py b/Untitled-1.py
+index 178c556..a58eabc 100644
+--- a/Untitled-1.py
++++ b/Untitled-1.py
+@@ -14,7 +14,7 @@ elif zamowienie == "Latte":
+     if dod == "Tak" or dod == "tak":
+         cena = 18
+     else:
+-        cena = 10
++        cena = 15
+ elif zamowienie == "Capp":
+     cena = 8
+ print("Zamówiłeś: "+ zamowienie + ". Kosztować będzie Ciebie to "+str(cena)+"$")
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git add .\Untitled-1.py
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Untitled-1.py
+
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git commit -m "Zmieniono cene"
+[main 793b04d] Zmieniono cene
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git push
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 6.46 KiB | 2.15 MiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/DimmeSs/inf04-study.git
+   1262e0c..793b04d  main -> main
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git checkout -b Testy
+Switched to a new branch 'Testy'
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch Testy
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Uzytkownik_wybiera_sposob_sortowania.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git add .\Uzytkownik_wybiera_sposob_sortowania.py
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git commit -m "dodalem s do jednej z nazw"
+[Testy 09cf46b] dodalem s do jednej z nazw
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git checkout testy
+Switched to branch 'testy'
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git checkout Testy
+Switched to branch 'Testy'
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git remote
+origin
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git remote -v
+origin  https://github.com/DimmeSs/inf04-study.git (fetch)
+origin  https://github.com/DimmeSs/inf04-study.git (push)
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git push -u origin
+fatal: The current branch Testy has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Testy
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git push -u origin Testy
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'Testy' on GitHub by visiting:
+remote:      https://github.com/DimmeSs/inf04-study/pull/new/Testy
+remote:
+To https://github.com/DimmeSs/inf04-study.git
+ * [new branch]      Testy -> Testy
+branch 'Testy' set up to track 'origin/Testy'.
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git merge Testy
+Updating 793b04d..09cf46b
+Fast-forward
+ Uzytkownik_wybiera_sposob_sortowania.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git commit -m "przenioslem zmiane z galezy testy do main"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DimmeSs/inf04-study.git
+   793b04d..09cf46b  main -> main
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git statys
+git: 'statys' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Link do nauki.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git add '.\Link do nauki.txt'
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Link do nauki.txt
+
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git commit -m "Link do komend na githubie"
+[main d8ca9e7] Link do komend na githubie
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Link do nauki.txt
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DimmeSs/inf04-study.git
+   09cf46b..d8ca9e7  main -> main
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    PAPIER KAMIEN NOZYCE.py
+        deleted:    TEST (1).py
+        deleted:    Untitled-1.py
+        deleted:    Zadanie.py
+        deleted:    Zwykle_pytanie.py
+        deleted:    nie powtarzaj po nie.py
+        modified:   spam emoji.py
+        deleted:    sprawdzanie czy liczba jest parzysta nieparzysta w przedziale.py
+        deleted:    szyfrowanie  GADERYPOLUKI.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Nie powtarzaj po mnie.py
+        Papier Kamien nozyce ( 3 lvl trudnosci ) .py
+        Podstawa Podstaw ( wiek ).py
+        Sprawdz Liczba Parzysta, Nieparzysta , Unlucky.py
+        szyfrowanie GADERYPOLUKI.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git add .
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    nie powtarzaj po nie.py -> Nie powtarzaj po mnie.py
+        deleted:    PAPIER KAMIEN NOZYCE.py
+        renamed:    TEST (1).py -> Papier Kamien nozyce ( 3 lvl trudnosci ) .py
+        renamed:    Zwykle_pytanie.py -> Podstawa Podstaw ( wiek ).py
+        renamed:    sprawdzanie czy liczba jest parzysta nieparzysta w przedziale.py -> Sprawdz Liczba Parzysta, Nieparzysta , Unlucky.py
+        deleted:    Untitled-1.py
+        deleted:    Zadanie.py
+        modified:   spam emoji.py
+        renamed:    szyfrowanie  GADERYPOLUKI.py -> szyfrowanie GADERYPOLUKI.py
+
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git commit -m "Czyszczenie Syfu"
+[main 7122f2f] Czyszczenie Syfu
+ 9 files changed, 4 insertions(+), 155 deletions(-)
+ rename nie powtarzaj po nie.py => Nie powtarzaj po mnie.py (91%)
+ delete mode 100644 PAPIER KAMIEN NOZYCE.py
+ rename TEST (1).py => Papier Kamien nozyce ( 3 lvl trudnosci ) .py (100%)
+ rename Zwykle_pytanie.py => Podstawa Podstaw ( wiek ).py (100%)
+ rename sprawdzanie czy liczba jest parzysta nieparzysta w przedziale.py => Sprawdz Liczba Parzysta, Nieparzysta , Unlucky.py (70%)
+ delete mode 100644 Untitled-1.py
+ delete mode 100644 Zadanie.py
+ rename szyfrowanie  GADERYPOLUKI.py => szyfrowanie GADERYPOLUKI.py (100%)
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.08 KiB | 1.08 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/DimmeSs/inf04-study.git
+   d8ca9e7..7122f2f  main -> main
+PS G:\!OGOLNA KOPIA PLIKÓW\inf04-study>
+
+
+
+
+------------------
+
+PS G:\KODOWANIE> git clone https://github.com/SkillGG/dotclicker.git
+Cloning into 'dotclicker'...
+remote: Enumerating objects: 348, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 348 (delta 0), reused 0 (delta 0), pack-reused 339
+/s
+Receiving objects: 100% (348/348), 1.66 MiB | 1.63 MiB/s, done.
+Resolving deltas: 100% (196/196), done.
+PS G:\KODOWANIE> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS G:\KODOWANIE> cd .\dotclicker\
+PS G:\KODOWANIE\dotclicker> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LICENCE
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS G:\KODOWANIE\dotclicker> git add .
+PS G:\KODOWANIE\dotclicker> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   LICENCE
+
+PS G:\KODOWANIE\dotclicker> git commit
+[master 6e8c76d] dodano licencje
+ 1 file changed, 21 insertions(+)
+ create mode 100644 LICENCE
+PS G:\KODOWANIE\dotclicker> git push
+remote: Permission to SkillGG/dotclicker.git denied to DimmeSs.
+fatal: unable to access 'https://github.com/SkillGG/dotclicker.git/': The requested URL returned error: 403
+PS G:\KODOWANIE\dotclicker> cd ..
+PS G:\KODOWANIE> cd .\dotclicker\
+PS G:\KODOWANIE\dotclicker> git remote add pr2 https://github.com/DimmeSs/dotclicker.git
+PS G:\KODOWANIE\dotclicker> git fetch
+PS G:\KODOWANIE\dotclicker> git checkout -b licencja
+Switched to a new branch 'licencja'
+PS G:\KODOWANIE\dotclicker> git push -u pr2 licencja
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 898 bytes | 898.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'licencja' on GitHub by visiting:
+remote:      https://github.com/DimmeSs/dotclicker/pull/new/licencja
+remote:
+To https://github.com/DimmeSs/dotclicker.git
+ * [new branch]      licencja -> licencja
+branch 'licencja' set up to track 'pr2/licencja'.
+PS G:\KODOWANIE\dotclicker> git push -u pr2 licencja
+Everything up-to-date
+branch 'licencja' set up to track 'pr2/licencja'.
+PS G:\KODOWANIE\dotclicker> git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 637 bytes | 21.00 KiB/s, done.
+From https://github.com/DimmeSs/dotclicker
+ * [new branch]      master     -> pr2/master
+Already up to date.
+PS G:\KODOWANIE\dotclicker> git checkout master
+Switched to branch 'master'
+D       LICENCE
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+PS G:\KODOWANIE\dotclicker> git push
+remote: Permission to SkillGG/dotclicker.git denied to DimmeSs.
+fatal: unable to access 'https://github.com/SkillGG/dotclicker.git/': The requested URL returned error: 403
+PS G:\KODOWANIE\dotclicker> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    LICENCE
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS G:\KODOWANIE\dotclicker> git stash push .
+Saved working directory and index state WIP on master: 6e8c76d dodano licencje
+PS G:\KODOWANIE\dotclicker> git pull
+From https://github.com/SkillGG/dotclicker
+   438cdbc..ec82d03  master     -> origin/master
+Updating 6e8c76d..ec82d03
+Fast-forward
+PS G:\KODOWANIE\dotclicker>
+
+
+

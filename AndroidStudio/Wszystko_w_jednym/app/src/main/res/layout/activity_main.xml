@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_200"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/BTlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logowanie"
+            android:text="LOGOWANIE" />
+
+        <Button
+            android:id="@+id/BTzdj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="zdjecia"
+            android:text="ZDJECIA" />
+
+        <Button
+            android:id="@+id/BTdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="data"
+            android:text="  DATA" />
+
+        <Button
+            android:id="@+id/BTdzwiek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dzwiek"
+            android:text="DZWIEK" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔼Wybierz strone z danymi akcjami 🔼"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/BTfilmik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="filmiki"
+            android:text="FILMIKI" />
+
+        <Button
+            android:id="@+id/BTsensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sensory"
+            android:text="SENSORY" />
+        <Button
+            android:id="@+id/BTpoziome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="poziome"
+            android:text="Poziomy  layout" />
+
+        <Button
+            android:id="@+id/BTtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="timer"
+            android:text="TIMER" />
+
+    </LinearLayout>
+</LinearLayout>

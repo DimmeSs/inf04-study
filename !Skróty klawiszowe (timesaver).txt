@@ -1,0 +1,23 @@
+ctrl shift p =  wykonaj polecenie / akcje w vscode
+
+ctrl r = historia plików
+
+ctrl p -> 
+	. = przejdz do pliku w otwarym folderze
+	:nr = przejdz do lini nr
+
+ctrl / = komentarz off/on
+
+znaznacz text i wcisnij ' zeby dodać string lub shift ' żeby powstał "
+
+pozbądz się niepotrzebnych spacji i tabów #Formatowanie Kodu:
+visual Code -> shift + alt + f
+Android Studio -> ctrl + alt + l
+Visual Community -> ctrl + k / d
+
+
+alt + strzałka + up/down = przenies linijke do up/down (!!!!! W ANDROID STYDIO ctrl shift up/down)
+
+pobierz rozszerzenie surround - > znaznacz text [ctrl shift T] i wybierz co chcesz zrobić
+
+
