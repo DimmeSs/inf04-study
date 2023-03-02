@@ -15,6 +15,7 @@ visual Code -> shift + alt + f
 Android Studio -> ctrl + alt + l
 Visual Community -> ctrl + k / d
 
+ALT+SHIFT+T - tłumaczenie
 
 alt + strzałka + up/down = przenies linijke do up/down (!!!!! W ANDROID STYDIO ctrl shift up/down)
 
